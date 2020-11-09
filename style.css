@@ -35,6 +35,9 @@
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10b-icon {
+    font-size: 60px;
+}
 .ex-11-icon {
     font-size: 60px;
 }
@@ -173,6 +176,33 @@
 
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+/* Esercizio 10B */
+
+.ex-10b-icon {
+  position: relative;
+  animation-name: loading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+    left: 0;
+  }
+
+  50% {
+    transform: rotate(360deg);
+    left: calc(100% - 50px);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    left: 0;
   }
 }
 
